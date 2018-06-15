@@ -3,8 +3,16 @@ import Link from 'gatsby-link';
 import { Container, Menu } from 'semantic-ui-react';
 
 const Header = ({ history: { location: { pathname } } }) => (
-  <Menu>
-    <Container>
+  <Menu
+    style={{
+      // background: '#494949',
+      marginBottom: '3rem',
+      borderBottom: '2px solid #e6e6e6',
+      marginLeft: '165px',
+      marginRight: '165px',
+    }}
+  >
+    <Container fontColor='white'>
       <Menu.Item
         as={Link}
         to='/'
